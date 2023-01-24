@@ -1,2 +1,11 @@
 # Twilight
 This will contain all of the code that I create for project twilight as well as information about the process of developing this project
+
+
+With the rise of 3D graphics in broadcast and other video enviornments, the need for new ways to track a cameras pan, tilt, zoom, focus, iris, and position in 3D space has never been larger. Traditional systems use infared (IR) emitters and IR cameras to calculate the position and rotation of a camera. This is very effective in studio environements where precision is paramount in creating high quality compositing.
+However, this technology is difficult to use in larger enviornments such as indoor sports facilities and is impossible to use outdoors where reflections and the sun can disrupt tracking systems. This has meant that tracking for sporting events has been done using image recognition of stationary cameras. The solution to this problem could be an emerging technology known as Ultra-Wide Band (UWB).
+UWB technology is ideal for large venues because of its resistence to interference, high precision, and high transmission speed. FCC regulations require at least 500mhz of bandwidth for UWB devices meaning that interference from cell towers, wifi access points, and mobile device transmissions is minimized. UWB devices can measure distance to an accuracy of 10cm. This is much better WIFI's 15 meter accuracy or Bluetooth's 8 meter accuracy. While it is not as accurate as a IR tracking system, the accuracy is acceptable for outdoor applications where 10cm of position inaccuracy is unnoticible. Finnally, high transmission rates allow for multiple strings of data, such as PTZ data, can be transmitted at the same time.
+
+UWB positioning systems use Time of Flight (TOF) to measure the distance between a transmitter and reciever. When a message is sent, a timestamp is included. When it is recieved, the timestamp is compared to the clock on the reciver. After, the device will divide the TOF with the speed of the transission frequency. As a result, you can measure the distance between devices.
+
+The most popular IR tracking system used by professionals is StarTracker by Mo-Sys. Therefore, this project will be called Twilight because of its ability to work without IR "Stars".
